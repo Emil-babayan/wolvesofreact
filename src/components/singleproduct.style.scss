@@ -1,0 +1,41 @@
+article {
+max-width: 400px;
+margin: 0 auto;
+h4 {
+    & + div {
+        text-align: center;
+
+    }
+    text-align: center;
+}
+    img {
+        width: 80%;
+    }
+
+    button {
+        width: 60px;
+        height: 28px;
+        color: whitesmoke;
+        background-color: #242424;
+        display: block;
+        margin: 0 auto;
+    }
+
+    h5 {
+        padding: 20px;
+        color: crimson;
+        text-align: right;
+    }
+    a {
+        color: grey;
+    }
+
+    b {
+        text-transform: capitalize;
+        color: crimson;
+    }
+    .fork {
+        display: flex;
+        justify-content: space-between;
+    }
+}

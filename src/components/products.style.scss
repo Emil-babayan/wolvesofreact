@@ -1,0 +1,54 @@
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    padding: 50px;
+    margin: 0 auto; 
+
+ 
+
+    figure {
+        position: relative;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.205);
+        padding: 20px 10px 0;
+        height: 100%;
+        
+        h6 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0 0 2px 5px;
+            min-width: 50px;
+            text-align: center;
+            border-bottom-left-radius: 10px;
+            border: 1px solid black;
+            
+        }
+
+        figcaption {
+            text-align: center;        
+            color: #242424;
+            text-transform: capitalize;
+            font-weight: 700;
+            font-size: 22px;
+
+        }
+
+        .specs {
+            display: flex;
+            justify-content: space-between;
+            max-width: 200px;
+            margin-inline: auto
+        }
+
+        h5, span {
+            text-align: center;
+            padding: 10px;
+            color: #242424;
+        }
+    }
+    img {
+        width: 100%;
+    }
+}

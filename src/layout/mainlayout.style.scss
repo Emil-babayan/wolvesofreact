@@ -1,0 +1,53 @@
+nav, footer {
+    background-color: silver;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    min-height: calc(100vh - 120px);
+    
+}
+header {
+
+    nav {
+      
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 60px;
+            mix-blend-mode: multiply;
+            filter: brightness(200%);
+        }
+    
+        ul {
+            width: min-content;
+
+            display: flex;
+          
+            li {
+                line-height: 60px;
+                margin-inline: 2%;
+                &::marker {
+                    content: "";
+                }
+                width: 100px;
+            }
+        }
+    }
+
+    a {
+
+        color: #242424;
+        font-weight: 500;
+
+        &.active-link {
+            font-style: italic;
+            text-decoration: underline red 2px;
+        }
+        
+    }
+
+}
