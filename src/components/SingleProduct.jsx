@@ -21,7 +21,7 @@ const SingleProduct = () => {
         <button>BUY</button>    
         <div className="fork">
         <Link to={`/brands/${brand}`}>More from <b>{brand}</b></Link>
-        <Link to=".."><u>Go back</u></Link>
+        <Link to=".."><u>Go Up!!</u></Link>
         </div>
         </article>
 
