@@ -18,7 +18,7 @@ const SingleProduct = () => {
 <p>Lorem {year} ipsum dolor sit amet consectetur adipisicing elit. Beatae placeat accusantium nobis debitis {ram} in, aut praesentium doloremque aspernatur alias unde tenetur. Aspernatur eum unde nam. Laudantium aperiam sequi incidunt sint?</p>
         
         <h5>{price}</h5>
-        <button>Get</button>    
+        <button>Buy</button>    
         <div className="fork">
         <Link to={`/brands/${brand}`}>More from <b>{brand}</b></Link>
         <Link to=".."><u>Go Up!!</u></Link>
