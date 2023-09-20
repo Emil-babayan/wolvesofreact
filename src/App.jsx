@@ -14,7 +14,7 @@ const App = () => {
           <Route path="/" element={<MainLayout/>}>      
             <Route index element={<Products/>}/>
             <Route path='products/:id' element={<SingleProduct/>}/>
-            <Route path='brands/:id' element={<SingleProduct/>}/>
+            <Route path='brands/:id' element={<h1>ok</h1>}/>
             <Route path='about' element={<About/>}/>
             <Route path='contact' element={<Contact/>}/>
           </Route >

@@ -1,21 +1,19 @@
 import "./products.style.scss"
-import { data } from "../data/data"
-import { useState } from "react"
+import { useContext } from "react"
+import { DataContext } from "../context/DataCTX"
 import { Link } from "react-router-dom"
 
-const init = (obj) => {
-    return Object.values(obj).flat()
-}
+
 
 const Products = () => {
 
-    const [products,setProducts] = useState(() => init(data))
+  const {data, dispatchData} = useContext(DataContext)
 
   return (
     <section className="products">
 
-        {products.map(({id, brand, model, price, img, ram, year, color}) => {
-            return <Link key={id} to={`products/${id}`} state={products.find(elem => elem.id == id)}>
+        {data.sort(()=> Math.random() - 0.5).map(({id, brand, model, price, img, ram, year, color}) => {
+            return <Link key={id} to={`products/${id}`}>
             <figure >
                 <h6 style={{backgroundColor: color == "black"? "white": color }}>{brand}</h6>
                 <figcaption>{model}</figcaption>

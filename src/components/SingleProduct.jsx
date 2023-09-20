@@ -1,11 +1,16 @@
 import "./singleproduct.style.scss"
-import { useParams, useLocation, Link } from "react-router-dom"
+import { useContext } from "react"
+import { DataContext } from "../context/DataCTX"
+import { useParams, Link } from "react-router-dom"
 
 const SingleProduct = () => {
 
-    const {state : {id, brand, model, price, img, ram, year, color}} = useLocation()
-    const param = useParams()
-
+   
+    const {id} = useParams()
+    const {data, dispatchData} = useContext(DataContext)
+    
+    const {model, year, img, price, brand, ram} = data.find(elem => elem.id == id)
+console.log(data)
 
   return (
 <>
